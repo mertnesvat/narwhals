@@ -1,0 +1,35 @@
+{
+  "current_page":1,
+  "per_page":20,
+  "total_entries":1,
+  "results":[
+    {
+      "id":1407020,
+      "name":"Brad Pitt",
+      "description":"William Bradley Pitt 1963 doğumlu ABD'li oyuncu ve film yapımcısı.",
+      "images":{
+        "medium":{
+          "path":"http://staticimage7.dakick.com/system/person/images/001/407/020/medium/37aed94624e51e50e831413ca647483a.jpg?1332961131"
+        },
+        "square":{
+          "path":"http://staticimage1.dakick.com/system/person/images/001/407/020/square/37aed94624e51e50e831413ca647483a.jpg?1332961131"
+        },
+        "thumb_small":{
+          "path":"http://staticimage0.dakick.com/system/person/images/001/407/020/thumb_small/37aed94624e51e50e831413ca647483a.jpg?1332961131"
+        },
+        "poster":{
+          "path":"http://staticimage6.dakick.com/system/person/images/001/407/020/poster/37aed94624e51e50e831413ca647483a.jpg?1332961131"
+        }
+      },
+      "icon":"http://d1befuu1tveqm3.cloudfront.net/system/followable_category/images/000/000/002/icon/00_people.png?1337350060",
+      "aka":null,
+      "parsable_type":"person",
+      "parsable_type_followable":true,
+      "parsable_type_translation":"kişi",
+      "uris":{
+        "self":"/api/v1/people/1407020",
+        "dakick_path":"/og-followables/710660"
+      }
+    }
+  ]
+}

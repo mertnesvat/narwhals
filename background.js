@@ -1,4 +1,4 @@
-alert('Warblers in action');
+//alert('Warblers in action');
 window.onload = function() { //sayfa yuklenince
   var getTags = function(){ // getTags fonksiyonu tagleri alacak servis -> response -> action!
     var siteName = ""; //youtube / fizy kontrol
