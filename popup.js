@@ -22,6 +22,7 @@ console.log('documentRead');
         //$('#results').html('Plugin name: ' + json.events[0].ticket_url + '<br />Author: ' + json.results);
         console.log('1');
         $.each(json.events, function (index, value) {
+          $('#inner').append("<img src=\"" + json.events[index].images.square.path + "\">")
           $('#inner').append( "<div id=\"red\" > "+ json.events[index].name +"</div>").bind('click', function() {
             console.log('2');
             var newURL = json.events[index].ticket_url ;
