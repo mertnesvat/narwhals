@@ -1,8 +1,12 @@
 //alert('Warblers in action');
+var muge = "sezen+aksu";
+var videoContentArray = Array();
+var mugeArray = Array();
+console.log('documentRead2');
 window.onload = function() { //sayfa yuklenince
   var getTags = function(){ // getTags fonksiyonu tagleri alacak servis -> response -> action!
     var siteName = ""; //youtube / fizy kontrol
-    var videoContentArray = Array(); 
+
     var siteControl = document.domain;
     console.log(siteControl);
     if(siteControl != "fizy.com"){
@@ -16,9 +20,14 @@ window.onload = function() { //sayfa yuklenince
       var metaTags=document.getElementsByTagName("meta");
       for (var i = 0; i < metaTags.length; i++) {
         if (metaTags[i].getAttribute("property") == "og:video:tag") { //video tag'inden alinan degerler tolgaya yolla!
+
           videoContent = metaTags[i].getAttribute("content");
           console.log('videoContent = '+videoContent);
           videoContentArray.push(videoContent);
+          if(i == 0 && muge != "sezen+aksu" ){
+            muge = videoContent;
+          }
+          mugeArray.push(videoContent);
         }
       }
     }else{
@@ -33,7 +42,7 @@ window.onload = function() { //sayfa yuklenince
     //    videoContentArray.push(innerTag);
     //  }
     }
-
+    console.log(videoContentArray);
     return videoContentArray;
   }
 
@@ -47,6 +56,7 @@ window.onload = function() { //sayfa yuklenince
       alert("stateChange");
     }
   }
+
 
 
   var content = getTags();
