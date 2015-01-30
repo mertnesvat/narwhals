@@ -24,7 +24,7 @@ $.ajax({
         url : baseEndpoint+searchUrl,
         dataType : "text",
         success: function(data) {
-
+            $('.loading').css('display','none');
           //data downloaded so we call parseJSON function
           //and pass downloaded data
           var json = $.parseJSON(data);
@@ -35,8 +35,8 @@ $.ajax({
           //$('#results').html('Plugin name: ' + json.events[0].ticket_url + '<br />Author: ' + json.results);
           console.log('1');
           $.each(json.events, function (index, value) {
-            $('#inner').append("<img src=\"" + json.events[index].images.square.path + "\">")
-            $('#inner').append( "<div id=\"red\" > "+ json.events[index].name +"</div>").bind('click', function() {
+            $('#inner').append("<li><img src=\"" + json.events[index].images.square.path + "\" class=\"img\">" +
+            "<div class=\"text\" > "+ json.events[index].name +"</div></li>").bind('click', function() {
               console.log('2');
               var newURL = json.events[index].ticket_url ;
               console.log('3 = '+newURL);
