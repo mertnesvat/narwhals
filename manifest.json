@@ -3,7 +3,7 @@
   "description": "New way to catch up.",
   "version": "2.0",
   "permissions": ["alarms", "tabs", "bookmarks",
-    "activeTab",
+    "activeTab","storage",
     "*://*.youtube.com/*"
   ],
   "background": {
