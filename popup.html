@@ -1,62 +1,59 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Set Page Color Popup</title>
-    <style>
-    body {
-      overflow: hidden;
-      margin: 0px;
-      padding: 0px;
-      background: #687bff;
-    }
+    <head>
+    <script type="text/javascript" src="js/custom.js"></script>
+        <title>Set Page Color Popup</title>
+        <style>
+                    body {
+                    overflow: hidden;
+                    margin: 0px;
+                    padding: 0px;
+                    background: #687bff;
+                    }
+                    div:first-child {
+                    margin-top: 0px;
+                    }
+                    
+                    .loading{
+                        padding-top: 35%;
+                        padding-left: 40%;
+                    }
+                    .inner {
+                    float: left;
+                    cursor: pointer;
+                    text-align: center;
+                    font-family: sans-serif;
+                    width: 300px;
+                    background: #cccccc;
+                    height: 300px;
+                    overflow-y: scroll;
+                    }
+                    .inner ul{float: left;
+                    width: 300px;
+                    margin: 0;
+                    padding: 0;}
+                    .inner ul li{list-style: none; border-bottom: 1px solid #000; float: left; width: 300px;}
+                    .img{  float: left; clear: left}
+                    .text{float:left;font-size: 13px;font-weight: bold; width: 180px; text-align: left; margin-left: 10px; margin-top: 15px;}
+                    .loading{ position: absolute; z-index: 999; background-color: #fff; opacity: .7; left: 0; top: 0; width: 300px; height: 300px;}
+        </style>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="background.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+    </head>
+    <body>
+        <div class="loading">
+            <img class="loader" src="Preloader_5.gif">
+        </div>
+        <div class="inner" >
+            <ul id="inner">
+            </ul>
+        </div>
+        
 
-    div:first-child {
-      margin-top: 0px;
-    }
-    
-    .loading{
-        padding-top: 35%;
-        padding-left: 40%;  
-    }
-    .inner {
-      float: left;
-      cursor: pointer;
-      text-align: center;
-      font-family: sans-serif;
-      width: 300px;
-      background: #cccccc;
-      height: 300px;
-      overflow-y: scroll;
-    }
-    .inner ul{float: left;
-      width: 300px;
-      margin: 0;
-      padding: 0;}
-    .inner ul li{list-style: none; border-bottom: 1px solid #000; float: left; width: 300px;}
-    .img{  float: left; clear: left}
-    .text{float:left;font-size: 13px;font-weight: bold; width: 180px; text-align: left; margin-left: 10px; margin-top: 15px;}
-
-    .loading{ position: absolute; z-index: 999; background-color: #fff; opacity: .7; left: 0; top: 0; width: 300px; height: 300px;}
-
-    </style>
-    <script src="jquery-1.11.2.min.js"></script>
-    <script src="background.js"></script>
-    <script type="text/javascript" src="popup.js"></script>
-
-
-  </head>
-  <body>
-  <div class="loading">
-        <img class="loader" src="Preloader_5.gif">
-  </div>
-  <div class="inner" >
-    <ul id="inner">
-
-    </ul>
-  </div>
-    <!--<div id="red">Haluk Levent</div>-->
-    <!--<div id="red">Avril Lavigne</div>-->
-    <!--<div id="red">Katy Pery</div>-->
-    <!--<div id="red">Taylor Swift</div>-->
-  </body>
+        <!--<div id="red">Haluk Levent</div>-->
+        <!--<div id="red">Avril Lavigne</div>-->
+        <!--<div id="red">Katy Pery</div>-->
+        <!--<div id="red">Taylor Swift</div>-->
+    </body>
 </html>
